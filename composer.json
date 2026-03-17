@@ -1,0 +1,14 @@
+{
+  "name": "riseseason/riseseason-mvp",
+  "description": "MVP RiseSeason - Marketplace freelancing francophone",
+  "type": "project",
+  "require": {
+    "php": "^8.3",
+    "flightphp/core": "^3.12"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  }
+}
