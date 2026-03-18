@@ -55,7 +55,6 @@ CREATE TABLE IF NOT EXISTS gigs (
   description TEXT NOT NULL,
   price_base DECIMAL(10,2) NULL,
   price_eur DECIMAL(10,2) NULL,
-  price_eur DECIMAL(10,2) NOT NULL,
   delivery_days INT NULL,
   status ENUM('pending','approved','rejected','paused') NOT NULL DEFAULT 'pending',
   is_sponsored BOOLEAN DEFAULT 0,
