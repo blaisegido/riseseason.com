@@ -3,7 +3,7 @@
   "description": "MVP RiseSeason - Marketplace freelancing francophone",
   "type": "project",
   "require": {
-    "php": "^8.3",
+    "php": "^8.2",
     "flightphp/core": "^3.12"
   },
   "autoload": {
