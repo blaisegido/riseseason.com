@@ -3,11 +3,11 @@
 declare(strict_types=1);
 
 return static function (): \PDO {
-    $hosts = ['localhost', '127.0.0.1'];
-    $port = 3306;
-    $db   = 'riseseason';
-    $user = 'root';
-    $pass = '';
+    $hosts = [getenv('DB_HOST') ?: 'localhost', '127.0.0.1'];
+    $port = (int)(getenv('DB_PORT') ?: 3306);
+    $db   = getenv('DB_NAME') ?: 'riseseason';
+    $user = getenv('DB_USER') ?: 'root';
+    $pass = getenv('DB_PASS') ?: '';
     $charset = 'utf8mb4';
 
     $lastError = null;
